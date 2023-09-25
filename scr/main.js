@@ -1,4 +1,4 @@
-for (let i = 1; i <= 500; i++) {
+for (let i = 1; i <= 1400; i++) {
   let pixel = document.createElement('div');
   pixel.classList.add('box');
   document.querySelector('.animation_Area').appendChild(pixel);

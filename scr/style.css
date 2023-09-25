@@ -131,30 +131,34 @@ body {
     rgba(249, 115, 22, 0.8),
     rgba(29, 78, 216, 1)
   ); */
-  display: flex;
-  flex-wrap: wrap;
+  /* display: flex;
+  flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: repeat(42, calc(100vh / 20));
   gap: 1px;
   overflow: hidden;
 }
 .box {
-  width: 40px;
-  height: 40px;
+  /* width: 40px;
+  height: 40px; */
+  aspect-ratio: 1 / 1;
 }
 .boxanimate {
-  animation: animate 5s linear infinite;
+  animation: animate 10s linear infinite;
 }
 @keyframes animate {
   0% {
-    /*filter: hue-rotate(0deg);*/
-    filter: blur(1px);
+    filter: hue-rotate(0deg);
+    /* background: #666; */
+    filter: blur(3px);
   }
-  /* 50% {
+  50% {
     background: #666;
-    filter: blur(1px);
-  } */
+    filter: blur(3px);
+  }
   100% {
-    /*filter: hue-rotate(360deg);*/
-    background: #666;
-    filter: blur(0px);
+    /* filter: hue-rotate(360deg); */
+    /* background: #666; */
+    filter: blur(3px);
   }
 }
